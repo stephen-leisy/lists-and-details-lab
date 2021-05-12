@@ -18,7 +18,7 @@ describe('Detail container tests', () => {
       </MemoryRouter>
     );
     screen.getByText('loading...');
-    const div = await getCharacterById('237699734fdcb7bef8f5c');
+    const div = await screen.findAllByRole('list', { name: 'character' });
     expect(div).toMatchSnapshot();
   });
 });

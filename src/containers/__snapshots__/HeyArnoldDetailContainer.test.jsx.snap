@@ -1,9 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Detail container tests renders one character to the screen 1`] = `
-Object {
-  "id": undefined,
-  "image": undefined,
-  "name": undefined,
-}
+Array [
+  <ul
+    aria-label="character"
+  >
+    <li>
+      <h1>
+        Nancy
+      </h1>
+      <img
+        alt="picture"
+        src="https://vignette.wikia.nocookie.net/heyarnold/images/6/62/Nancy.jpg/revision/latest/scale-to-width-down/310?cb=20110423055923"
+      />
+    </li>
+  </ul>,
+]
 `;
