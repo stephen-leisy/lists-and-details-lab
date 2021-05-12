@@ -1,0 +1,22 @@
+.nav-bar {
+  color: red;
+  display: flex;
+  align-items: center;
+}
+.character-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: aqua;
+}
+.main {
+  background-color: aquamarine;
+}
+
+h1 {
+  color: pink;
+}
+.header {
+  background-color: blueviolet;
+}

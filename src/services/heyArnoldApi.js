@@ -3,7 +3,7 @@ export const getCharacters = async () => {
     `https://hey-arnold-api.herokuapp.com/api/v1/characters`
   );
   const json = await response.json();
-  console.log('earlier', json);
+
   return json.map((character) => ({
     name: character.name,
     image: character.image,
@@ -20,5 +20,18 @@ export const getCharacterById = async (charId) => {
     name,
     image,
     id: _id,
+  };
+};
+
+export const getRandomGif = async () => {
+  const gif = await fetch(
+    `https://hey-arnold-api.herokuapp.com/api/v1/gifs/random?count=1`
+  );
+  const json = await gif.json();
+  const { _id, gifLink } = json[0];
+
+  return {
+    id: _id,
+    gifLink,
   };
 };

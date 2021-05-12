@@ -5,15 +5,15 @@ import DetailCharacter from '../components/characters/DetailCharacter';
 export default class HeyArnoldDetailContainer extends Component {
   state = {
     character: [],
+    loading: true,
   };
   async componentDidMount() {
     const character = await getCharacterById(this.props.match.params.id);
-
-    this.setState({ character });
+    this.setState({ character, loading: false });
   }
   render() {
-    console.log(this.state.character);
-    const { character } = this.state;
+    const { character, loading } = this.state;
+    if (loading === true) return <div>loading...</div>;
     return <DetailCharacter name={character.name} image={character.image} />;
   }
 }

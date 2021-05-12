@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Character = ({ name, image }) => (
+const Character = ({ name }) => (
   <>
     <h1>{name}</h1>
   </>

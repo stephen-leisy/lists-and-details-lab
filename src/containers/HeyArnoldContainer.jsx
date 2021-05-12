@@ -13,11 +13,14 @@ export default class HeyArnoldContainer extends Component {
     this.setState({ characterList, loading: false });
   }
   render() {
-    console.log('here?', this.state.characterList);
     const { characterList, loading } = this.state;
 
     if (loading === true) return <div>loading...</div>;
 
-    return <CharacterList list={characterList} />;
+    return (
+      <div className="main">
+        <CharacterList list={characterList} />
+      </div>
+    );
   }
 }
