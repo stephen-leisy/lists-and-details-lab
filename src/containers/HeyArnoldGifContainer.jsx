@@ -5,15 +5,17 @@ import GigCharacter from '../components/characters/GigCharacter';
 export default class HeyArnoldGifContainer extends Component {
   state = {
     gif: {},
+    loading: true,
   };
 
   async componentDidMount() {
     const gif = await getRandomGif();
-    this.setState({ gif });
+    this.setState({ gif, loading: false });
   }
   render() {
-    const { gifLink } = this.state.gif;
-    console.log('container', gifLink);
-    return <GigCharacter gifLink={gifLink} />;
+    const { gif, loading } = this.state;
+    console.log('container', gif.gifLink);
+    if (loading === true) return <div>loading...</div>;
+    return <GigCharacter gifLink={gif.gifLink} />;
   }
 }

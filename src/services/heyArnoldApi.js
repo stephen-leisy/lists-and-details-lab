@@ -28,7 +28,7 @@ export const getRandomGif = async () => {
     `https://hey-arnold-api.herokuapp.com/api/v1/gifs/random?count=1`
   );
   const json = await gif.json();
-  const { _id, gifLink } = json[0];
+  const { _id, gifLink } = await json[0];
 
   return {
     id: _id,

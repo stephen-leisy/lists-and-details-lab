@@ -5,20 +5,11 @@ exports[`Hey Arnold Container Tests renders a list of characters to the page 1`]
   aria-label="characters"
 >
   <a
-    href="/5da237699734fdcb7bef8f5c"
+    href="/5da237699734fdcb7bef8f51"
   >
     <li>
       <h1>
-        Nancy
-      </h1>
-    </li>
-  </a>
-  <a
-    href="/5da237699734fdcb7bef8f59"
-  >
-    <li>
-      <h1>
-        Grandpa's grandfather
+        Arnold Shortman
       </h1>
     </li>
   </a>
@@ -32,65 +23,20 @@ exports[`Hey Arnold Container Tests renders a list of characters to the page 1`]
     </li>
   </a>
   <a
-    href="/5da237699734fdcb7bef8f58"
+    href="/5da237699734fdcb7bef8f53"
   >
     <li>
       <h1>
-        Grandpa's father
+        Grandma Gertie
       </h1>
     </li>
   </a>
   <a
-    href="/5da237699734fdcb7bef8f70"
+    href="/5da237699734fdcb7bef8f54"
   >
     <li>
       <h1>
-        Phoebe Heyerdahl
-      </h1>
-    </li>
-  </a>
-  <a
-    href="/5da237699734fdcb7bef8f7e"
-  >
-    <li>
-      <h1>
-        Eugene Horowitz
-      </h1>
-    </li>
-  </a>
-  <a
-    href="/5da237699734fdcb7bef8f82"
-  >
-    <li>
-      <h1>
-        Ray
-      </h1>
-    </li>
-  </a>
-  <a
-    href="/5da237699734fdcb7bef8f8b"
-  >
-    <li>
-      <h1>
-        Shelley
-      </h1>
-    </li>
-  </a>
-  <a
-    href="/5da237699734fdcb7bef8f76"
-  >
-    <li>
-      <h1>
-        Lila Sawyer
-      </h1>
-    </li>
-  </a>
-  <a
-    href="/5da237699734fdcb7bef8f7c"
-  >
-    <li>
-      <h1>
-        Uncle Stinky
+        Mitzi
       </h1>
     </li>
   </a>
@@ -104,83 +50,137 @@ exports[`Hey Arnold Container Tests renders a list of characters to the page 1`]
     </li>
   </a>
   <a
-    href="/5da237699734fdcb7bef8f66"
+    href="/5da237699734fdcb7bef8f56"
   >
     <li>
       <h1>
-        Olga Pataki
+        Miles Shortman
       </h1>
     </li>
   </a>
   <a
-    href="/5da237699734fdcb7bef8f6b"
+    href="/5da237699734fdcb7bef8f57"
   >
     <li>
       <h1>
-        Timberly Johanssen
+        Stella Shortman
       </h1>
     </li>
   </a>
   <a
-    href="/5da237699734fdcb7bef8f6d"
+    href="/5da237699734fdcb7bef8f58"
   >
     <li>
       <h1>
-        Jerry Berman
+        Grandpa's father
       </h1>
     </li>
   </a>
   <a
-    href="/5da237699734fdcb7bef8f73"
+    href="/5da237699734fdcb7bef8f59"
   >
     <li>
       <h1>
-        Rhonda Wellington Lloyd
+        Grandpa's grandfather
       </h1>
     </li>
   </a>
   <a
-    href="/5da237699734fdcb7bef8f78"
+    href="/5da237699734fdcb7bef8f5a"
   >
     <li>
       <h1>
-        Stinky Peterson
+        Oskar Kokoshka
       </h1>
     </li>
   </a>
   <a
-    href="/5da237699734fdcb7bef8f71"
+    href="/5da237699734fdcb7bef8f5b"
   >
     <li>
       <h1>
-        Kyo Heyerdahl
+        Suzie Kokoshka
       </h1>
     </li>
   </a>
   <a
-    href="/5da237699734fdcb7bef8f8e"
+    href="/5da237699734fdcb7bef8f5c"
   >
     <li>
       <h1>
-        Iggy
+        Nancy
       </h1>
     </li>
   </a>
   <a
-    href="/5da237699734fdcb7bef8f77"
+    href="/5da237699734fdcb7bef8f5d"
   >
     <li>
       <h1>
-        Mr. Sawyer
+        Ernie Potts
       </h1>
     </li>
   </a>
   <a
-    href="/5da237699734fdcb7bef8f84"
+    href="/5da237699734fdcb7bef8f5e"
   >
     <li>
       <h1>
-        Thaddeus "Curly" Gammelthorpe
+        Mr. Hyunh
+      </h1>
+    </li>
+  </a>
+  <a
+    href="/5da237699734fdcb7bef8f5f"
+  >
+    <li>
+      <h1>
+        Mai Hyunh
+      </h1>
+    </li>
+  </a>
+  <a
+    href="/5da237699734fdcb7bef8f60"
+  >
+    <li>
+      <h1>
+        Mr. Smith
+      </h1>
+    </li>
+  </a>
+  <a
+    href="/5da237699734fdcb7bef8f61"
+  >
+    <li>
+      <h1>
+        Lana Vail
+      </h1>
+    </li>
+  </a>
+  <a
+    href="/5da237699734fdcb7bef8f62"
+  >
+    <li>
+      <h1>
+        Mr. Purdy (character)
+      </h1>
+    </li>
+  </a>
+  <a
+    href="/5da237699734fdcb7bef8f63"
+  >
+    <li>
+      <h1>
+        Helga G. Pataki
+      </h1>
+    </li>
+  </a>
+  <a
+    href="/5da237699734fdcb7bef8f64"
+  >
+    <li>
+      <h1>
+        Robert "Big Bob" Pataki
       </h1>
     </li>
   </a>

@@ -2,6 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import HeyArnoldDetailContainer from './HeyArnoldDetailContainer';
 import { MemoryRouter } from 'react-router';
+import { getCharacterById } from '../services/heyArnoldApi';
 
 describe('Detail container tests', () => {
   it('renders one character to the screen', async () => {
@@ -17,5 +18,7 @@ describe('Detail container tests', () => {
       </MemoryRouter>
     );
     screen.getByText('loading...');
+    const div = await getCharacterById('237699734fdcb7bef8f5c');
+    expect(div).toMatchSnapshot();
   });
 });
