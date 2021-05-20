@@ -1,26 +1,23 @@
-import React, { Component } from 'react';
-import { getCharacters } from '../services/heyArnoldApi';
+import React from 'react';
+import Banner from '../components/header/Banner';
 import CharacterList from '../components/characters/CharacterList';
+import { useAllCharacters } from '../hooks/allCharacters';
+import Spinner from '../components/characters/Spinner';
 
-export default class HeyArnoldContainer extends Component {
-  state = {
-    characterList: [],
-    loading: true,
-  };
+export default function HeyArnoldContainer() {
+  const { loading, characters } = useAllCharacters();
 
-  async componentDidMount() {
-    const characterList = await getCharacters();
-    this.setState({ characterList, loading: false });
-  }
-  render() {
-    const { characterList, loading } = this.state;
-
-    if (loading === true) return <div>loading...</div>;
-
+  if (loading)
     return (
-      <div className="main">
-        <CharacterList list={characterList} />
-      </div>
+      <main>
+        <Banner />
+        <Spinner /> loading...
+      </main>
     );
-  }
+  return (
+    <main>
+      <Banner />
+      <CharacterList characters={characters} />
+    </main>
+  );
 }

@@ -1,21 +1,24 @@
-import React, { Component } from 'react';
-import { getRandomGif } from '../services/heyArnoldApi';
+import React from 'react';
+import Banner from '../components/header/Banner';
+import { useGif } from '../hooks/allCharacters';
 import GigCharacter from '../components/characters/GigCharacter';
+import Spinner from '../components/characters/Spinner';
 
-export default class HeyArnoldGifContainer extends Component {
-  state = {
-    gif: {},
-    loading: true,
-  };
+export default function HeyArnoldGifContainer() {
+  const { loading, gif } = useGif();
 
-  async componentDidMount() {
-    const gif = await getRandomGif();
-    this.setState({ gif, loading: false });
-  }
-  render() {
-    const { gif, loading } = this.state;
-    console.log('container', gif.gifLink);
-    if (loading === true) return <div>loading...</div>;
-    return <GigCharacter gifLink={gif.gifLink} />;
-  }
+  if (loading)
+    return (
+      <main>
+        <Banner />
+        <Spinner />
+        loading...
+      </main>
+    );
+  return (
+    <main>
+      <Banner />
+      <GigCharacter {...gif} />
+    </main>
+  );
 }

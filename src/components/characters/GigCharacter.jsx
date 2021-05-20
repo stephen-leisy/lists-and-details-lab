@@ -1,17 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-function GigCharacter({ gifLink }) {
-  console.log('display', gifLink);
+function GigCharacter({ gifLink, id }) {
   return (
-    <div>
-      <img src={gifLink} />
-    </div>
+    <main>
+      <img src={gifLink} alt={id} />
+    </main>
   );
 }
-
-GigCharacter.propTypes = {
-  gifLink: PropTypes.string.isRequired,
-};
-
 export default GigCharacter;

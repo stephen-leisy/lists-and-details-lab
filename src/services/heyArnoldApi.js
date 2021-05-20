@@ -4,10 +4,10 @@ export const getCharacters = async () => {
   );
   const json = await response.json();
 
-  return json.map((character) => ({
-    name: character.name,
-    image: character.image,
-    id: character._id,
+  return json.map(({ _id, name, image }) => ({
+    name,
+    image,
+    id: _id,
   }));
 };
 export const getCharacterById = async (charId) => {
